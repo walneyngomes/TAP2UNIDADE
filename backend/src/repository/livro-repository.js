@@ -10,7 +10,7 @@ exports.getAll = async() => {
 ;}
 
 exports.create = async(data) => {
-    let livro = new Product(data);
+    let livro = new Livro(data);
     return await livro.save();
 }
 
@@ -18,10 +18,10 @@ exports.update = async(id, data) => {
     console.log(data);
     return await Livro.findByIdAndUpdate(id, {
         $set: {
-            name: data.name,
-            email: data.email,
-            password: data.password,
-            status: data.status
+            "name": data.name,
+            "email": data.email,
+            "password": data.password,
+            "status": data.status
         }
     });
 }

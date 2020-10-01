@@ -1,24 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
+import React ,{ Component } from 'react';
 import './App.css';
 import Routes from './route';
-const axios = require('axios');
+import api from './api';
 
-function App() {
+
+
+
+
+class App extends Component {
+
+
   
-    axios.get('/usuarios').then(resultado=>{
-        console.log(resultado);
-    })
-    axios.get('/livro').then(resultado=>{
-      console.log(resultado);
-  })
-  axios.post('/auth/login').then(resultado=>{
-    console.log(resultado);
-})
-  return (
-    
-    <Routes />
-  );
+  state = {
+    usuarios: [],
+  }
+
+  async componentDidMount() {
+    const response = await api.post();
+  }
+  
+
+ 
+
+  render() {
+    const {usuarios} = this.state;
+   
+   
+   return (<div>  
+      {console.log(usuarios)}
+       <Routes/>
+      </div>
+     
+     
+
+    );
+  }
 }
 
 export default App;
+ 

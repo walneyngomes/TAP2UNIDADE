@@ -12,14 +12,11 @@ mongoose.connect('mongodb://localhost:27017/bookflix',{
 
 app.use(bodyParser.json());
 app.use(cors());
-app.use(expressJwt({secret: 'd41d8cd98f00b204e9800998ecf8427e|7aef61337bcee2'}).unless({path: ['/auth', '/auth/login', '/user']}));
 
 //resolver todos os caminhos de diretorios
-app.use(express.static(__dirname +'/frontendd'));
+app.use(express.static(__dirname +'./bookflikx/frontendd'));
 
-app.get('/', function(req, res){
-    res.send(getHello());
-});
+
 
 const authRouter = require('./src/routes/auth-route');
 app.use('/auth', authRouter);

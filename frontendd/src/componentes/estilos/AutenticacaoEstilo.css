@@ -1,104 +1,94 @@
-
-* {
-	box-sizing: border-box;
+body {
+    margin: 0;
+    padding: 0;
+    /* background-size: cover; */
+    font-family: 'Roboto', sans-serif;
 }
 
-body {
-	background: #f6f5f7;
-	
-	font-family: 'Montserrat', sans-serif;
-	height: 100vh;
-	margin: 10px 190px;
+.login {
+    width: 350px;
+    height: 410px;
+    border: 2px solid #F4F8F7;
+    border-radius: 50px 50px 50px 50px;
+    color: #FFFFFF;
+    background-color: rgba(0,0,5,0.8);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 60px 28px;
+}
+
+.usuario {
+    border-radius: 50%;
+    position: absolute;
+    top: -15%;
+    left: 120px;
 }
 
 h1 {
-	font-weight: bold;
-	margin: 0;
+    margin: 0;
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 25px;
 }
 
-h2 {
-	text-align: center;
+.login p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
 }
 
-p {
-	font-size: 14px;
-	font-weight: 100;
-	line-height: 20px;
-	letter-spacing: 0.5px;
-	margin: 20px 0 30px;
+.login input {
+    width: 100%;
+    margin-bottom: 22px;
 }
 
-span {
-	font-size: 12px;
+.login input[type="text"], input[type="password"] {
+    border: none;
+    border-bottom: 2px solid #69A1D2;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #FFF;
+    font-size: 16px;
 }
 
-a {
-	color: #333;
-	font-size: 14px;
-	text-decoration: none;
-	margin: 15px 0;
+.login input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 35px;
+    text-transform: uppercase;
+    font-size: medium;
+    color: #FFFFFF;
+    background: #69A1D2;
+    border-radius: 20px;
+    transition: 0.2s;
 }
 
-button {
-	border-radius: 230px;
-	border: 1px solid #FF4B2B;
-	background-color: #FF4B2B;
-	color: #FFFFFF;
-	font-size: 12px;
-	font-weight: bold;
-	padding: 12px 45px;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	transition: transform 80ms ease-in;
+.login input[type="submit"]:hover {
+    cursor: pointer;
+    background: rgba(111,199, 139);
+    transition: 0.2s;
 }
 
-button:active {
-	transform: scale(0.95);
+.login a {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 20px;
+    color: #F4F8F7;
+    margin-left: 25%;
+    transition: 0.2s;
 }
 
-button:focus {
-	outline: none;
+.login a:hover {
+    transition: 0.2s;
+    color: #FF4D4D;
 }
-
-button.ghost {
-	background-color: transparent;
-	border-color: #FFFFFF;
-}
-
-form {
-	background-color: #FFFFFF;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	padding: 0 20px;
-	height: 100%;
-	text-align: center;
-}
-
-input {
-	background-color: rgb(221, 215, 215);
-	
-	padding: 22px 1px;
-	margin: 111px 2pxs;
-}
-
-.container {
-	background-color: #fff;
-	border-radius: 10px;
-  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
-			0 10px 10px rgba(0,0,0,0.22);
-	position: relative;
-	overflow: hidden;
-	width: 7683px;
-	max-width: 100%;
-	min-height: 480px;
-}
-
-
-
-
-
-
-
 

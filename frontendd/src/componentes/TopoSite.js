@@ -15,7 +15,7 @@ export default function(){
 
                 <nav>
                
-            <a href={'./AutenticacaoLogin'}>LOGIN</a>
+            <a href={'./AutenticacaoLogin'}>CADASTRO</a>
             
                 </nav>
                 </div>

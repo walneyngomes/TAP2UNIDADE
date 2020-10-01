@@ -1,4 +1,5 @@
-
+const jwt = require('jsonwebtoken');
+const md5 = require('md5');
 
 const repository = require('../repository/livro-repository');
 
@@ -17,6 +18,7 @@ exports.getAllLivro = async(req, res, next) => {
 
 exports.addLivro = async(req, res, next) => {
     try {
+
         let dbReturn= await repository.create(req.body);
         res.status(200).send(dbReturn);        
     } catch (e) {
