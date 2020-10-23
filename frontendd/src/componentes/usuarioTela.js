@@ -26,7 +26,7 @@ export default function(){
 
             <div class="principal">
                 <div class="blocos">
-                <img src="https://images-na.ssl-images-amazon.com/images/I/41LFFu+ffJL._SX258_BO1,204,203,200_.jpg"/>
+                <img src="https://image.freepik.com/vetores-gratis/imagens-animadas-abstratas-neon-lines_23-2148344065.jpg"/>
 
 
                     <div class="cartao">
