@@ -1,0 +1,19 @@
+version: '3.6' 
+services:
+ frontend:
+   image: tap/frontend
+   depends_on: 
+    - backend
+   ports:
+     - "3000:80"
+ backend:
+   image: tap/backend
+   depends_on: 
+    - localhost
+   environment:
+     - DATABASE_URL=mongodb://localhost:27017/bookflix
+     - PORTA=5000
+   ports:
+     - "27017:27017"
+ localhost:
+   image: mongo
